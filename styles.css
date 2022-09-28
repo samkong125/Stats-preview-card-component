@@ -5,6 +5,7 @@
 */
 body{
     background-color: azure;
+    font-size: 15px;
 }
 
 .card{
@@ -26,7 +27,14 @@ body{
 .card .metrics{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+.metrics .metrics1{
+    padding: 0px;
+    margin: 15 px;
 }
 
 .card .image-container{
@@ -35,9 +43,14 @@ body{
 }
 
 .image-container .image {
-    background-image: url("./images/image-header-desktop.jpg");
+    background-image:  url("./images/image-header-desktop.jpg");
     background-size: cover;
     min-height: 446px;
+}
+
+.image-container{
+    background-color: rgba(170,92,219,.5);
+    width: 100%;
 }
 
 .card h1{
@@ -45,7 +58,8 @@ body{
 }
 
 .card h2{
-    color: hsla(0, 0%, 100%, 0.6);
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2px;
 }
 
 .card p{
